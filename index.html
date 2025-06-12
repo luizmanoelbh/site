@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paisagens Aleatórias</title>
+    <title>M A N E L</title>
     <style>
         html, body {
             height: 100%;
@@ -24,23 +24,6 @@
     </style>
 </head>
 <body>
-    <img id="nature-img" src="" alt="" />
-    <script>
-        const img = document.getElementById('nature-img');
-        function loadRandomImage() {
-            const url = `https://source.unsplash.com/1920x1080/?nature,landscape,forest,mountain,river,tree,sky&sig=${Math.random()}`;
-            img.style.opacity = 0;
-            setTimeout(() => {
-                img.src = url;
-            }, 400);
-        }
-        img.onload = function() {
-            img.style.opacity = 1;
-        };
-        // Carrega a primeira imagem
-        loadRandomImage();
-        // Troca a cada 5 segundos
-        setInterval(loadRandomImage, 5000);
-    </script>
+    <img id="nature-img" src="https://source.unsplash.com/1920x1080/?nature,landscape,forest,mountain,river,tree,sky" alt="" />
 </body>
 </html>
